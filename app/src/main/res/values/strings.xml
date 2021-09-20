@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Starred Github Repos</string>
+    <string name="trending_repos">Trending Repos</string>
+</resources>
