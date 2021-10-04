@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="40dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/repoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repo_name"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/repoDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repo_desc"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/reop" />
+
+        <TextView
+            android:id="@+id/repoOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repo_owner"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/repoImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_black_star_rate_24" />
+
+            <TextView
+                android:id="@+id/star_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numberOfStars"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
